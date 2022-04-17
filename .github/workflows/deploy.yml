@@ -4,11 +4,11 @@ on:
     branches:
       - main
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
 
       - name: Install and Build
         run: |
@@ -19,8 +19,8 @@ jobs:
         uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.3.2
         with:
           # github_access_token: ${{ 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 }} 
-          # build_configuration: application
-          base_href: /tomfurlong.github.io/
           github_access_token: ${{ secrets.ACCESS_TOKEN }}
+          build_configuration: application
+          base_href: /tomfurlong.github.io/
           deploy_branch: gh-pages
           angular_dist_build_folder: docs
