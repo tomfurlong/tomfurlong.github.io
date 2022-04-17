@@ -21,5 +21,6 @@ jobs:
           # github_access_token: ${{ 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 }} 
           # build_configuration: application
           # base_href: /tomfurlong.github.io/
+          github_access_token: ${{ secrets.ACCESS_TOKEN }}
           deploy_branch: gh-pages
           angular_dist_build_folder: docs
