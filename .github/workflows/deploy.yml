@@ -13,7 +13,7 @@ jobs:
       - name: Install and Build
         run: |
           npm ci
-          npx ng build --output-path docs --base-href /tomfurlong.github.io/
+          npx ng build --output-path docs
           cp docs/index.html docs/404.html
       - name: Deploy
         uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.3.2
