@@ -24,4 +24,4 @@ jobs:
           # build_configuration: application
           # base_href: /tomfurlong.github.io/
           deploy_branch: gh-pages
-          angular_dist_build_folder: docs
+          # angular_dist_build_folder: docs
