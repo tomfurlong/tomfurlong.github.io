@@ -18,9 +18,7 @@ jobs:
       - name: Deploy
         uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.3.2
         with:
-          secrets:
-            ACCESS_TOKEN: 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
-          github_access_token: ${{ secrets.ACCESS_TOKEN }} 
+          github_access_token: ${{ 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 }} 
           # build_configuration: application
           # base_href: /tomfurlong.github.io/
           deploy_branch: gh-pages
