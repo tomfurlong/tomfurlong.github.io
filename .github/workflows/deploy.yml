@@ -13,7 +13,7 @@ jobs:
       - name: Install and Build
         run: |
           npm ci
-          npx ng build --output-path docs href="https://tomfurlong.github.io/" 
+          npx ng build --output-path docs --base-href "https://tomfurlong.github.io/" 
           cp docs/index.html docs/404.html
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.3.0
